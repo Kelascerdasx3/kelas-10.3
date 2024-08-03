@@ -116,5 +116,5 @@ nav ul li a.active {
   }
 
 .animate__animated animate__fadeIn {
---animate-duration: 2s;
+         animate-duration: 2s;
 }
