@@ -115,6 +115,7 @@ nav ul li a.active {
       }
   }
 
-.animate__animated animate__fadeIn {
-         animate-duration: 2s;
+.card.animate__animated.animate__fadeIn {
+    --animate-duration: 3s;
+    --animate-delay:0;
 }
