@@ -83,8 +83,13 @@ main {
 }
 
 .image-container:hover {
-    width: 520px;
-    height: 420px;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 900ms;
+}
+
+.image-container:not(:hover) {
+    transition: scale(0.8);
     transition: all 900ms;
 }
 
