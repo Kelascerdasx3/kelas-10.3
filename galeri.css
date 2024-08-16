@@ -89,7 +89,7 @@ main {
 }
 
 .image-container:not(:hover) {
-    transition: scale(0.8);
+    transfrom: scale(0.8);
     transition: all 900ms;
 }
 
