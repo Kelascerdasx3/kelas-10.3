@@ -14,7 +14,7 @@ nav ul {
     display: flex;
     list-style-type: none;
     gap: 2rem;
-    left: 40%;
+    justify-content: center;
     position: relative;
     top: 0;
     z-index: 2;
