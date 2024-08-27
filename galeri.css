@@ -6,7 +6,6 @@
 
 html body {
     overflow-x: hidden;
-    overflow-y: scroll;
     background-color: rgb(199, 199, 199);
 }
 
@@ -70,11 +69,12 @@ nav ul li a.active {
 }
 
 .cover-container img {
-    width:1300px;
-    height: 500px;
+    width:1800px;
+    height: 700px;
     align-items: center;
     object-fit: cover;
     border-radius: 10px;
+    overflow: hidden;
     
 }
 
@@ -82,7 +82,6 @@ nav ul li a.active {
     display: flex;
     flex-wrap: wrap;
     float: left;
-    justify-content: center;
     gap: 25px;
     padding: 1.5rem;
 }
@@ -90,7 +89,6 @@ nav ul li a.active {
     display: flex;
     flex-wrap: wrap;
     float: right;
-    justify-content: center;
     gap: 25px;
     padding: 1.5rem;
 }
@@ -101,8 +99,8 @@ nav ul li a.active {
     opacity: 10;
 }
 .image-container {
-    width: 350px;
-    height: 250px;
+    width: 500px;
+    height: 400px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -136,6 +134,41 @@ nav ul li a.active {
     --animation-duration: 400ms;
 }
 
+@media (max-width: 1440px) {
+    .cover-container img {
+        width:1300px;
+        height: 500px;
+        align-items: center;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    }
+    .image-container {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    .image-container .image-content {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 10px;
+    }
+    .image-title {
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .title-container .image-title {
+        position: relative;
+        color: white;
+        font-family: "Poetsen One", sans-serif;
+        text-decoration: underline 0.15em ;
+    }
+}
+
 @media screen and (max-width: 1366px) {
 
     .image-container img {
@@ -160,6 +193,28 @@ nav ul li a.active {
     .image-container {
         width: 220px;
         height: 130px;
+    }
+
+    .cover-container img {
+        width:1200px;
+        height: 300px;
+        align-items: center;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    }
+    .line-image1 {
+        justify-content: center;
+    }
+
+    .line-image2 {
+        justify-content: center;
+    }
+
+
+    .image-container {
+        width: 300px;
+        height: 200px;
     }
 
 
