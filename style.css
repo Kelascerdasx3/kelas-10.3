@@ -82,16 +82,20 @@
       }
       .cover-container {
         background-color: rgb(71, 71, 109);
-        padding: 19rem 10rem;
         z-index: -1;
+        width: 100%;
+        margin-top: 1rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
       }
       
       .cover-container .cover-content {
-        position: relative;
         display: block;
-        justify-content: center;
-        align-items: center;
-        width: auto;
+        float: left;
+        width: 100%;
+        padding: 18rem 0;
+        background-color: grey;
       }
       
       .cover-content .cover-title {
@@ -147,7 +151,6 @@
       .about-container .about-content .img {
         width: 300px;
         height: 400px;
-        background-color: grey;
       }
       .about-container .about-description {
         line-height: 1.6;
@@ -208,15 +211,16 @@
     
 
       @media (max-width: 1440px) {
-        .cover-container {
-          padding: 13rem 9rem;
-        }
         .main-image .line .image-container {
           width: 240px;
           height: 290px;
         }
-      } 
-      
+        .cover-container .cover-content {
+          float: left;
+          padding: 12rem 0;
+        }
+
+      }
       @media (max-width: 1100px )
       {
         html body {
@@ -226,17 +230,13 @@
           font-size: 0.6rem;
         }
 
-        .cover-container {
-          padding: 6.5rem 11rem;
-        }
-
         .cover-container .cover-title {
-          font-size: .8rem;
+          font-size: 1.5rem;   
          
         }
 
         .cover-container .cover-paragraft {
-          font-size: 0.5rem;
+          font-size: 0.8rem;
         }
 
         .text-content {
@@ -276,17 +276,12 @@
           font-size: 0.6rem;
         }
 
-        .cover-container {
-          padding: 6.5rem 11rem;
-        }
-
         .cover-container .cover-title {
-          font-size: .8rem;
-         
+          font-size: 1.1rem;
         }
 
         .cover-container .cover-paragraft {
-          font-size: 0.5rem;
+          font-size: 0.7rem;
         }
 
         .text-content {
