@@ -207,7 +207,7 @@
         object-fit: cover;
         box-shadow: 10px;
     }
-    
+
 
     @media screen and (max-width: 1440px) {
         .main-image .line .image-container {
@@ -265,7 +265,6 @@
           overflow: hidden;
         }
       }
-
       @media screen and (max-width: 800px )
       {
         html body {
@@ -275,8 +274,13 @@
           font-size: 0.6rem;
         }
 
+        .cover-container .cover-content {
+          padding: 22rem 0;
+        }
+
         .cover-container .cover-title {
           font-size: 1.1rem;
+         
         }
 
         .cover-container .cover-paragraft {
