@@ -284,7 +284,8 @@
         }
 
         .cover-container .cover-paragraft {
-          font-size: 0.7rem;
+          font-size: 10px;
+          overflow: hidden; 
         }
 
         .text-content {
